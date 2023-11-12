@@ -1,0 +1,91 @@
+.btnF {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.45rem 0.9rem;
+    font-size: .9rem;
+    border-radius: 0.15rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.btn-cancelar {
+    color: #313A46;
+    background-color: #F1F4F8;
+    border-color: #F0F3F8;
+    border-radius: 3px;
+    
+}
+
+.btn-grabar {
+    color: #FFF;
+    background-color: #0ACF97;
+    border-color: #0ACF97;
+    box-shadow: 0 2px 6px 0 rgb(10 207 151 / 50%);
+    border-radius: 3px;
+}
+
+.btn-asignar {
+    color: #FFF;
+    background-color: #0ACF97;
+    border-color: #0ACF97;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgb(10 207 151 / 100%);
+    width: 100%;
+}
+
+.btn-exportar {
+    color: #313A46;
+    background-color: #F1F4F8;
+    border-color: #F0F3F8;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgba(201, 196, 197, 0.5);
+}
+
+.btn-nuevo {
+    color: #FFF;
+    background-color: #FA5C7C;
+    border-color: #FA5C7C;
+    -webkit-box-shadow: 0 2px 6px 0 rgb(250 92 124 / 50%);
+    box-shadow: 0 2px 6px 0 rgb(250 92 124 / 50%);
+}
+
+.btn-cancelar:hover {
+    color: #313A46;
+    background-color: #F1F4F8;
+    border-color: #F0F3F8;
+}
+
+.btn-grabar:hover {
+    color: #FFF;
+    background-color: #09B080;
+    border-color: #08A679;
+}
+
+.btn-exportar:hover {
+    color: #313A46;
+    background-color: #F1F4F8;
+    border-color: #F0F3F8;
+}
+
+.btn-nuevo:hover {
+    color: #FFF;
+    background-color: #D54E69;
+    border-color: #C84A63;
+}
+
+.btn:hover {
+    color: #6C757D;
+}

@@ -1,0 +1,24 @@
+<button
+    *ngIf="setelement === '0'"
+    [type]='buttonType'
+    [class]='buttonClasses'
+    [style.minWidth.px]='minWidth'
+    [disabled]='disabled'
+>
+    <i
+        *ngIf="buttonIcon"
+        [class]="buttonIcon"
+    ></i>&nbsp;{{ buttonLabel }}
+</button>
+<button
+    *ngIf="setelement === '1'"
+    [type]='buttonType'
+    [class]='buttonClasses'
+    [style.minWidth.px]='minWidth'
+    [disabled]='disabled'
+>
+    <i
+        *ngIf="buttonIcon"
+        [class]="buttonIcon"
+    ></i>&nbsp;GO
+</button>

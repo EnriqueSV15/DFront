@@ -1,0 +1,179 @@
+{
+    "global":{
+        "actions": "Acción",
+        "select": "Seleccionar",
+        "edit": "Editar",
+        "update": "Actualizar"
+    },
+
+    "Usuario":{
+        "Nuevo": "New User",
+
+        "CodigoUsuario": "Code",
+        "Usuario": "User",
+        "Nombres": "Full Name",
+        "Apellidos": "Last Name",
+        "Rol": "Rol",
+        "Email": "E-mail",
+        "Estado": "Status"
+    },
+
+    "Roles":{
+        "Nuevo": "New Rol",
+
+        "CodigoRoles": "Code",
+        "Descripcion": "Description",
+        "Estado": "Status"
+    },
+
+    "Semaforo":{
+        "CodigoSemaforo": "Code",
+        "Descripcion": "Description",
+        "Desde": "From",
+        "Hasta": "Until"
+    },
+
+    "ClienteBloqueado":{
+        "Exportar": "Export",
+        "Anio": "Year",
+        "TipoPersona": "Type of Person",
+        "Pais": "Country",
+
+        "CodigoCliente": "Código",
+        "Nombre": "Nombre",
+        "Apepaterno": "Apellido Paterno",
+        "Apematerno": "Apellido Materno",
+        "Estadocivil": "Estado Civil",
+        "Tipodocumento": "Tipo Documento",
+        "Nrodocumento": "Nro. Documento",
+        "Direccion": "Dirección",
+        "Telefono1": "Teléfono",
+        "Email": "Correo Electrónico",
+        "Motivo": "Tipo de Bloqueo",
+        "Fecharegistro": "Fecha de Registro",
+        "Observacion": "Observación"
+    },
+
+    "Siniestro":{
+        "Exportar": "Exportar",
+        "Rango": "Rango de Fechas",
+        "fechaIni": "Fecha Inicio",
+        "fechaFin": "Fecha Fin",
+        "EstadoSi": "Estado de Siniestro",
+        "NroSiniestro": "Nro. Siniestro",
+        "Motivo": "Motivo de Anulación",
+        "Observacion": "Observación",
+        "FechaAnula": "Fecha de Anulación",
+        "ClienteB": "Búsqueda por CLiente",
+        "NombreC": "Nombre de CLiente",
+
+        "CodigoSiniestro": "Código",
+        "Producto": "Producto",
+        "CodigoPoliza": "Póliza",
+        "FechaVigente": "Fecha Inicio Póliza",
+        "FechaVcto": "Fecha Vcto Póliza",
+        "TipoPoliza": "Tipo de Póliza",
+        "EstadoPoliza": "Estado Póliza",
+        "FechaNotificacion": "Fecha Notificación",
+        "HoraOcurrencia": "Hora Ocurrencia",
+        "CodigoCertificado": "Certificado",
+        "Placa": "Placa",
+        "NroSerie": "Nro Serial Vehículo",
+        "Moneda": "Moneda",
+        "MontoCobertura": "Monto Cobertura",
+        "MontoAprobado": "Monto Aprobado",
+        "MontoPagado": "Monto Pagado",
+        "MontoPendiente": "Monto Pendiente",
+        "UsuarioRegistra": "Usuario Registra",
+        "CalleOcurrencia": "Calle de Siniestro",
+        "Estado": "Estado Siniestro",
+
+        "Siniestro": "Datos Siniestro",
+        "HoraOcu": "Hora Notif.",
+        "Responsable": "Responsable de Pago",
+        "CodSiniestro": "Código Siniestro",
+        "Marca": "Marca",
+        "Chofer": "Datos Chofer",
+        "NroDocChofer": "Nro. Documento",
+        "NombreChofer": "Nombre Completo - Chofer",
+        "Validar": "Validar Chofer",
+        "Activar": "Activar Siniestro"
+    },
+
+    "Asociar":{
+        "Busqueda": "Tipo de Búsqueda",
+        "Buscar": "Buscar",
+        "BotonAsociar": "Enlazar Siniestro",
+        "BotonAntecedente": "Ver Antecedentes",
+
+        "Comentario": "Resumen de Análisis",
+
+        "Codigo": "CÓDIGO",
+        "FecRegistro": "FECHA DE REGISTRO",
+        "Bloqueo": "BLOQUEO",
+        "Observacion": "OBSERVACIÓN",
+
+        "FecNotificacion": "FECHA NOTIFICACIÓN",
+        "Moneda": "Moneda",
+        "MontoAprobado": "MONTO APROBADO",
+        "MontoPagado": "MONTO PAGADO",
+        "MontoPendiente": "MONTO PENDIENTE",
+        "MontoPrima": "MONTO PRIMA",
+
+        "DniChofer": "Número DNI",
+        "NombreChofer": "Nombre Completo - Chofer",
+
+        "CodigoCliente": "Código Cliente",
+        "NombreCliente": "Nombre Cliente",
+        "FecNotif": "Fecha Notificación",
+        "Hora": "Hora",
+        "CalleOcurrencia": "Calle Ocurrencia",
+        "MontoApro": "Monto Aprobado",
+        "MontoPag": "Monto Pagado",
+        "MontoPend": "Monto Pendiente",
+        "Poliza": "Pólizas Vigente",
+
+        "NroPoliza": "Nro. Póliza",
+        "FechaIni": "Fecha Inicio",
+        "FechaVcto": "Fecha Vcto.",
+
+        "Certificado": "Certificado",
+        "NroCertificado": "Nro. Certificado",
+        "MontoCobertura": "Monto Cobertura",
+        "Marca": "Marca",
+        "Placa": "Placa"
+    },
+
+    "Busqueda":{
+        "Tipo": "Tipo de Búsqueda",
+        "Busqueda": "Buscar",
+
+        "Codigo": "Código",
+        "Nombre": "Nombre Cliente",
+        "TipoDocumento": "Tipo Documento",
+        "Numero": "Nro. Documento"
+    },
+
+    "Mensajeria":{
+        "Proceso": "Tipo de Proceso",
+
+        "Codigo": "Código",
+        "Correo": "Correo eléctronico"
+    },
+
+    "Chofer":{
+        "CodigoChofer": "Code",
+        "Descripcion": "Description",
+        "Desde": "From",
+        "Hasta": "Until",
+        "Factor": "Factor"
+    },
+
+    "Responsable":{
+        "CodigoResponsable": "Code",
+        "Descripcion": "Description",
+        "Desde": "From",
+        "Hasta": "Until",
+        "Factor": "Factor"
+    }
+}

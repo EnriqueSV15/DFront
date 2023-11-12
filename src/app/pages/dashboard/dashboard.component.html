@@ -1,0 +1,122 @@
+<div id="main-content">
+    <div class="container-fluid">
+        <div class="card border-dark mb-3">
+            <div class="card-body text-dark">
+                <form
+                    [formGroup]="frmPokemonToFilter"
+                    novalidate="novalidate"
+                    #frm="ngForm"
+                >
+                    <div class="row form-row">
+                        <div class="col-md-6">
+                            <app-generic-prime-datatable
+                                [columns]="$any(columns)"                    
+                                [dataRows] = "PokemonInfo"
+                                [paginator]="true"
+                                [searchPrimeNg] = "true"
+                                [totalRecords] = "totalPokemon"
+                                [actions] = "$any(actions)"
+                                (rowActionClick)="rowActionClick($event)"
+                                [sugerencias] = "SugerenciaInfo"
+                            >
+                            </app-generic-prime-datatable>
+                        </div>
+
+                        <div class="col-md-6">
+                            <fieldset>
+                                <legend class="texto-negrita"> Detalle de Pokemon </legend>
+                                <div class="row form-row">                                                    
+                                    <div class="col-md-12 flex align-items-center">
+                                        <p-image [src]="imagen" [preview]="true" alt="Image" width="250">
+                                            <ng-template pTemplate="indicator">
+                                                <i class="pi pi-check"></i>
+                                            </ng-template>
+                                        </p-image>
+                                    </div>
+                                </div>
+
+                                <div class="row form-row">
+                                    <div class=" col-md-3" style="padding-left: 20px;">
+                                        <app-generic-input
+                                            id='name'
+                                            title="Nombre"
+                                            type='text'
+                                            [control]="frmPokemonToFilter.get('name')"
+                                            [submitted]='frm.submitted'
+                                        >
+                                        </app-generic-input>
+                                    </div>
+
+                                    <div class=" col-md-3">
+                                        <app-generic-input
+                                            id='height'
+                                            title="Altura"
+                                            type='text'
+                                            [control]="frmPokemonToFilter.get('height')"
+                                            [submitted]='frm.submitted'
+                                        >
+                                        </app-generic-input>
+                                    </div>
+
+                                    <div class=" col-md-3">
+                                        <app-generic-input
+                                            id='weight'
+                                            title="Peso"
+                                            type='text'
+                                            [control]="frmPokemonToFilter.get('weight')"
+                                            [submitted]='frm.submitted'
+                                        >
+                                        </app-generic-input>
+                                    </div>
+
+                                    <div class=" col-md-3">
+                                        <app-generic-input
+                                            id='experience'
+                                            title="Experiencia"
+                                            type='text'
+                                            [control]="frmPokemonToFilter.get('experience')"
+                                            [submitted]='frm.submitted'
+                                        >
+                                        </app-generic-input>
+                                    </div>
+                                </div>
+
+                                <div class="row form-row">
+                                    <div class="col-md-12" style="padding-left: 20px;">
+                                        <app-generic-prime-datatable
+                                            [columns]="$any(columnsAbilities)"                    
+                                            [dataRows] = "AbilitiesInfo"
+                                            [paginator]="false"
+                                            [searchPrimeNg] = "false"
+                                        >
+                                        </app-generic-prime-datatable>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row form-row">
+                        <div class="col-md-4">
+                            <label class="texto-negrita">Resumen por abecedario:</label>
+                        </div>
+                    </div>
+
+                    <div class="row form-row">
+                        <div class=" col-md-6">
+                            <app-generic-prime-datatable
+                                [columns]="$any(columnsResumen)"                    
+                                [dataRows] = "ResumenInfo"
+                                [paginator]="false"
+                                [searchPrimeNg] = "false"
+                            >
+                            </app-generic-prime-datatable>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

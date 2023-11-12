@@ -1,0 +1,48 @@
+<div
+    class="form-group"
+    *ngIf="type === 'text' || type === 'password' || type === 'numeric' || type === 'date'"
+>
+    <label
+        [for]="id"
+        class="label"
+    >
+        {{ title }}
+    </label>
+    <input
+        *ngIf="type === 'numeric'"
+        type="text"
+        [id]="id"
+        [formControl]="control"
+        [placeholder]="placeholder || title"
+        class="form-control form-control-sm"
+        [ngClass]="{'loading': loading, 'is-invalid' : this.control.errors && (this.control.touched || this.submitted)}"
+        autocomplete="off"
+        appOnlyNumber
+        
+        [maxlength]="maxLength"
+    >
+   
+    <input
+        *ngIf="type !== 'numeric'"
+        [type]="type"
+        [id]="id"
+        [formControl]="control"
+        [placeholder]="placeholder || title"
+        class="form-control form-control-sm"
+        [ngClass]="{'loading': loading, 'is-invalid': this.control.errors && (this.control.touched || this.submitted)}"
+        autocomplete="off"
+        [maxlength]="maxLength"
+    >
+
+
+    <small
+        *ngIf="this.control.errors && (this.control.touched || this.submitted)"
+        class="form-text text-danger"
+    >
+        <span *ngIf="control.errors['required']">This field is required. </span>
+        <span *ngIf="control.errors['pattern']">Incorrect format.</span>
+        <span *ngIf="control.errors['invalid']">This field is invalid.</span>
+        <!-- <span *ngIf="control.errors['required']">Este campo es requerido. </span>
+        <span *ngIf="control.errors['pattern']">Este campo debe tener el formato correcto.</span> -->
+    </small>
+</div>
