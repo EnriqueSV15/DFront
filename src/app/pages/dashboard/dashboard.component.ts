@@ -92,9 +92,9 @@ export class DashboardComponent implements OnInit {
     let pokemonData;
     let sugerenciaData; 
 
-    let contPokemon = 1000;
+    let contadorPokemon = 1000;
 
-    for(let i = 1; i <= contPokemon; i++){
+    for(let i = 1; i <= contadorPokemon; i++){
       this.pokemonService.searchId(i).subscribe((rpta: any) => {  
         if (rpta) {
           apiTrader.data = [rpta];
@@ -123,7 +123,7 @@ export class DashboardComponent implements OnInit {
         this.hideSpinner();
       });
     }
-    this.totalPokemon = contPokemon;
+    this.totalPokemon = contadorPokemon;
   }
 
   resumen(){
